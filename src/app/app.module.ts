@@ -9,12 +9,14 @@ import { MovieCardComponent } from './movie-card/movie-card.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { CardGridComponent } from './card-grid/card-grid.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieCardComponent,
+    CardGridComponent,
   ],
   imports: [
     BrowserModule,
