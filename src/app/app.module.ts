@@ -3,16 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MovieCardComponent } from './movie-card/movie-card.component';
+
+
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MovieCardComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule,
+    MatGridListModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
