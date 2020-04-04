@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FetchMoviesService } from '../services/fetchMovies/fetch-movies.service';
+import { Film } from '../services/fetchMovies/film';
 
 const filmz = [
   { title: 'Lovey',
@@ -32,13 +33,15 @@ const filmz = [
 })
 
 export class CardGridComponent implements OnInit {
-  public films = [];
-
+  public films: Array<Film>;
   constructor(private api: FetchMoviesService) { 
   }
 
   ngOnInit(): void {
     this.api.fetchMovies()
-      .subscribe(data => this.films = data)
+      .subscribe(data => {
+        this.films = data;
+      });
   }
+  
 }

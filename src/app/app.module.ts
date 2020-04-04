@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MovieCardComponent } from './movie-card/movie-card.component';
-import { HttpClientModule } from '@angular/common/http';
+// import { HttpClientModule } from '@angular/common/http'; - v1
 
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -20,7 +20,7 @@ import { CardGridComponent } from './card-grid/card-grid.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+    // HttpClientModule, - v1
     MatCardModule,
     MatGridListModule,
     NoopAnimationsModule
