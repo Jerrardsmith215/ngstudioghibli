@@ -1,3 +1,7 @@
-<mat-grid-list class="card-grid" cols="2" rowHeight="500px">
-    <mat-grid-tile class="card-tile" [colspan]="1" [rowspan]="1"></mat-grid-tile>
+<mat-grid-list class="card-grid" cols="2" rowHeight="375px">
+    <mat-grid-tile *ngFor="let film of films" class="card-tile" [colspan]="1" [rowspan]="1">
+        <app-movie-card [film]="film" ></app-movie-card>
+    </mat-grid-tile>
 </mat-grid-list>
+
+<!--  -->

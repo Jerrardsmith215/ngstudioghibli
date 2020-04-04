@@ -1,0 +1,14 @@
+mat-card {
+  background: #424242;
+  width: 300px !important;
+  height: 300px !important;
+}
+
+mat-card-header {
+  border-bottom: 1px solid white;
+}
+
+mat-card-content p {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=movie-card.component.css.map */
